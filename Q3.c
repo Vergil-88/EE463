@@ -1,26 +1,27 @@
 #include <stdio.h>
 
-int main() {
+int main(int argc, char *argv[]) {
   	char fullName[50];
   	int age;
   	char address[100];
 
-  	printf("Enter your full name: ");
-  	scanf("%s\n", &fullName);
+  	printf("Enter your full name: \n");
+  	scanf("%[^\n]s", &fullName);
 	
 	
-  	printf("Enter your age: ");
-  	scanf("%d\n", &age);
+  	printf("Enter your age: \n");
+  	scanf("%d", &age);
 	
 	getchar();
 
 
-  	printf("Enter your address: ");
-  	scanf("%s\n", &address);
+  	printf("Enter your address: \n");
+  	scanf("%[^\n]s", &address);
 
   	printf("Full name %s\n", fullName);
   	printf("Age %d\n", age);
-  	printf("Address %s", address);
+  	printf("Address %s\n", address);
 
   	return 0;
 }
+
